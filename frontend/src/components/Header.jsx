@@ -24,28 +24,30 @@ const Header = () => {
                 </div>
 
                 {/* Navigation Menu */}
-                <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+                <a href="#menu" id="toggle"><span></span></a>
+
+                <nav id='menu' className={`nav-menu ${isMenuOpen ? 'open' : ''}` }>
                     <ul className="nav-list">
                         <li className="nav-item">
-                            <Link to="/" className="nav-link">About us</Link>
+                            <Link to="/aboutus" className="nav-link">About us</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/about" className="nav-link">Black Bars</Link>
+                            <Link to="/blackbars" className="nav-link">Black Bars</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/products" className="nav-link">Bright Bars</Link>
+                            <Link to="/brightbars" className="nav-link">Bright Bars</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Steel Grades</Link>
+                            <Link to="/steelgrades" className="nav-link">Steel Grades</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Infrastructure</Link>
+                            <Link to="/infrastructure" className="nav-link">Infrastructure</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Applications</Link>
+                            <Link to="/applications" className="nav-link">Applications</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Contact us</Link>
+                            <Link to="/contactus" className="nav-link">Contact us</Link>
                         </li>
                     </ul>
                 </nav>

@@ -98,6 +98,8 @@
     }
 }
 
+
+
 /* User and Icons Container */
 .user-cart-container {
     display: flex;
@@ -143,11 +145,12 @@
     display: none;
 }
 
+
+
+
 /* Responsive */
 @media screen and (min-width: 768px) {
-    .mobile-icon {
-        display: none;
-    }
+    
 }
 
 /* Responsive */
@@ -175,6 +178,8 @@
 
     .nav-menu.open {
         display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
         position: absolute;
         top: 60px; 
         right: 0;
