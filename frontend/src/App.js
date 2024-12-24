@@ -10,6 +10,7 @@ import Infrastructure from './pages/Infrastructure';
 import Applications from './pages/Applications';
 import Contactus from './pages/Contactus';
 import Error from './pages/Error';
+import './styles/main.css';
 
 function App() {
   return (

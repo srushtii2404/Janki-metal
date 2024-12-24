@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet");
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700");
 
-*{
+/* *{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -11,21 +10,9 @@
 body{
   overflow:hidden;
   background-color: #f4f6ff;
-}
+} */
 
-.container{
-  width:100vw;
-  height:100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  left:6vmin;
-  text-align: center;
-}
-
-.cog-wheel1, .cog-wheel2{
+/* .cog-wheel1, .cog-wheel2{
   transform:scale(0.7);
 }
 
@@ -127,4 +114,4 @@ h1{
   padding:3vmin 12vmin 3vmin 3vmin;
   font-weight:600;
   color:#092532;
-}
+} */

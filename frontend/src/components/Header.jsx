@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { BiSearch } from "react-icons/bi";
 import { CiMenuFries } from "react-icons/ci";
 
-import './Header.css'; 
-
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,9 +11,9 @@ const Header = () => {
     };
 
     return (
-        <header className="header">
+        <header className="header secondery-shadow">
             <div className="header-container">
-                {/* Logo */}
+                {/* Logo */}    
                 <div className="logo">
                     <Link to="/" className="logo-link">
                         <h1 className="logo-text desktop-logo">Janki Metal</h1>
@@ -25,7 +23,7 @@ const Header = () => {
 
                 {/* Navigation Menu */}
                 <a href="#menu" id="toggle"><span></span></a>
-
+                {/* overlay */}
                 <nav id='menu' className={`nav-menu ${isMenuOpen ? 'open' : ''}` }>
                     <ul className="nav-list">
                         <li className="nav-item">
