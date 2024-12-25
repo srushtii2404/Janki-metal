@@ -13,6 +13,8 @@ body{
     --light-color:#8a7873;
     --secondary-color:#131131;
     --white-color:#ffff;
+    --footer-color:#131131;
+    --dull-white:#d1d1d1;
 }
 .main-box-shadow{
     box-shadow: 0 12px 24px var(--secondary-color);

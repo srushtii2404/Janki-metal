@@ -80,7 +80,7 @@
 .nav-link:hover::after {
     transform: scaleX(1);
 } */
-.header .nav-menu .nav-list .nav-item .nav-link :before {
+.header .nav-menu .nav-list .nav-item .nav-link ::before {
     left: 0;
     bottom: 0;
     width: 100%;
@@ -94,8 +94,8 @@
     position: absolute;
     transition: transform .5s ease;
 }
-.nav-link:hover {
-    color: #ff3d00;
+.nav-item:hover {
+    color: #ff3d00 
 }
 
 /* Responsive */
@@ -153,13 +153,6 @@
 .icon-container{
     display: flex;
 }
-
-/* Remove Old Cart and Login Styles */
-.login-button,
-.cart-button {
-    display: none;
-}
-
 
 @media screen and (max-width:1199.5px) {
     .header .header-container {

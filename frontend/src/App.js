@@ -11,6 +11,8 @@ import Applications from './pages/Applications';
 import Contactus from './pages/Contactus';
 import Error from './pages/Error';
 import './styles/main.css';
+import Footer from './components/Footer';
+import HexBar from './pages/HexBar';
 
 function App() {
   return (
@@ -25,8 +27,10 @@ function App() {
         <Route path='/infrastructure' element={<Infrastructure />} />
         <Route path='/applications' element={<Applications />} />
         <Route path='/contactus' element={<Contactus />} />
+        <Route path='/hexbar' element={<HexBar/>}/>
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
