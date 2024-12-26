@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header'; // Import your component correctly
+import Header from './components/Header';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
 import Blackbars from './pages/Blackbars';
@@ -11,6 +11,7 @@ import Applications from './pages/Applications';
 import Contactus from './pages/Contactus';
 import Error from './pages/Error';
 import './styles/main.css';
+import './commonjs/common.js';
 
 function App() {
   return (
