@@ -7,24 +7,40 @@
     margin: 30px 20px;
     z-index: 1000;
 } */
+ 
 .header {
-position: absolute;
-    top: 33px;
-    border-radius: 10px 40px 10px 40px;
-    padding: 0px 0;
-    margin: 30px 20px;
-    z-index: 1000;
-    left: 51px;
-    right: 59px;
-    margin: auto;
-    background-color: var(--white-color);
-    transition: 0.5s all ease-in-out;
-}
+    position: absolute;
+        top: 0;
+        padding: 10px 0;
+        z-index: 1000;
+        width: 100%;
+        margin: auto;
+        transition: 0.5s all ease-in-out;
+        box-shadow: none !important;
+        border-bottom: 1px solid #464545;
+    }
+    .header.scrolled {
+        position: absolute;
+            top: 33px;
+            border-radius: 10px 40px 10px 40px;
+            padding: 0px 0;
+            margin: 30px 20px;
+            z-index: 1000;
+            left: 51px;
+            right: 59px;
+            margin: auto;
+            background-color: var(--white-color);
+            transition: 0.5s all ease-in-out;
+            box-shadow: 1px 1px 5px 2px #484747 !important;
+        } 
 .header.scrolled{
-      position: fixed;
-      top: 20px;
-      transition: 0.5s all ease-in-out;
-      animation-name: slideInDown;
+    position: fixed;
+    top: 20px;
+    padding: 10px 0;
+    transition: 0.5s all ease-in-out;
+    animation-name: slideInDown;
+    width: 86%;
+    left: 13px;
 }
 @keyframes slideInDown{
 0% {
@@ -42,9 +58,9 @@ position: absolute;
     display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 14px 40px
+        padding: 8px 40px
 }
-.mainHeader.scrolled {
+.header .scrolled {
     background-color: #230101f7;
     animation: 1400ms running;
     animation-name: slideInDown;
@@ -111,11 +127,14 @@ position: absolute;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
-    color: var(--dark-color);
+    color: var(--white-color);
     /* transition: color 0.3s;
     padding: 8px 12px;
     border-radius: 4px;
     position: relative; */
+}
+.header.scrolled .nav-menu .nav-list .nav-item .nav-link{
+   color: var(--dark-color);
 }
 /* .nav-link::after {
     content: "";
@@ -202,7 +221,7 @@ position: absolute;
 
 @media screen and (max-width:1199.5px) {
     .header .header-container {
-        padding: 14px 23px;
+        padding: 8px 23px;
 }
 .header .nav-menu .nav-list .nav-item .nav-link {
     padding: 0 10px;
@@ -267,6 +286,26 @@ position: absolute;
     .header-container {
         justify-content: space-between;
     }
+     .hero-section .carousel-control-next {
+       right:20px;
+    }
+    .hero-section .carousel-control-prev{
+        left:20px;
+     }
+}
+@media screen and (max-width:768px) {
+    .header.scrolled {
+        position: fixed;
+        top: 20px;
+        padding: 10px 0;
+        transition: 0.5s all ease-in-out;
+        animation-name: slideInDown;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+    }
 }
 @media screen and (max-width:575px) {
     .header {
@@ -280,7 +319,13 @@ position: absolute;
       top: 69px;
     }
     .header .header-container {
-        padding: 9px 11px;
+        padding: 0 11px;
     }
 
+}
+
+@media screen and (max-width:440px) {
+    .hero-section .img-container-box {
+        padding-bottom: 200px !important;
+    }
 }

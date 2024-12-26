@@ -14,7 +14,7 @@ const Header = () => {
     useLayoutEffect(() => {
         const handleScroll = () => {
             if (headerRef.current) {
-                if (window.scrollY > 10) {
+                if (window.scrollY > 80) {
                     headerRef.current.classList.add('scrolled');
                 } else {
                     headerRef.current.classList.remove('scrolled');
@@ -32,8 +32,8 @@ const Header = () => {
 
     return (
         <>
-        <div className='container'>
-        <header ref={headerRef} className="header secondery-shadow">
+        <div className='container-fluid p-0'>
+        <header ref={headerRef} className="header">
             <div className="header-container">
                 {/* Logo */}
                 <div className="logo">
@@ -62,9 +62,9 @@ const Header = () => {
                     <button className="menu-button" onClick={toggleMenu}>
                         <CiMenuFries size={24} />
                     </button>
-                    <button className="search-button">
+                    {/* <button className="search-button">
                         <BiSearch size={24} />
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </header>

@@ -62,7 +62,7 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 .hero-section .slider-content .caresoule-content{
-   font-weight: 200px;
+   font-weight: 400;
    font-size: 40px;
    margin-top: 30px;
    color: azure;
@@ -147,3 +147,44 @@
     transform: scale(1.2); /* Optionally scale the icon for visual effect */
     transition: 0.5s all ease-in-out;
   }
+
+  @media screen and (max-width:1199px) {
+    .hero-section .img-container-box {
+        padding-bottom: 690px;
+    }  
+    .hero-section .slider-content .caresoule-title {
+        font-size: 74px;
+    }  
+  }
+  @media screen and (max-width:991px) {
+    .hero-section .img-container-box {
+        padding-bottom:515px;
+    }    
+    .hero-section .slider-content .caresoule-title {
+        font-size: 63px;
+    }
+    .hero-section .slider-content .caresoule-content {
+        font-size: 31px;
+    }    
+  }
+
+  @media screen and (max-width: 767px) {
+    .hero-section .img-container-box {
+        padding-bottom: 421px;
+    }
+    .hero-section .slider-content .caresoule-title {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .hero-section .img-container-box {
+        padding-bottom: 316px;
+    }
+        .hero-section .slider-content .caresoule-title {
+            font-size: 30px;
+        }
+        .hero-section .slider-content .caresoule-content {
+            font-size: 20px;
+            margin-top: 9px;
+        }
+}
