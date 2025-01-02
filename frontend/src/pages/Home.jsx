@@ -1,4 +1,6 @@
 import React from 'react';
+import AboutSection from '../components/AboutSection';
+import BrightBarssection from '../components/BrightBarssection';
 const Home = () => {
   return (
     <>
@@ -19,7 +21,7 @@ const Home = () => {
             <div className="carousel-item">
               <div className='img-container-box'>
                 <div className='img-inner-box'>
-                  <img src="/images/banner3.jpg" className="d-block w-100" alt="..." />
+                  <img src="/images/banner5.jpg" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <div class="slider-content">
@@ -30,7 +32,7 @@ const Home = () => {
             <div className="carousel-item">
               <div className='img-container-box'>
                 <div className='img-inner-box'>
-                  <img src="/images/banner4.webp" className="d-block w-100" alt="..." />
+                  <img src="/images/slide1.jpg" className="d-block w-100" alt="..." />
                 </div>
               </div>
               <div class="slider-content">
@@ -62,8 +64,10 @@ const Home = () => {
           </button>
         </div>
       </section>
+      <AboutSection />
+      <BrightBarssection />
     </>
   )
 }
 
-export default Home
+export default Home        

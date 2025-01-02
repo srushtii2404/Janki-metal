@@ -7,9 +7,8 @@
     margin: 30px 20px;
     z-index: 1000;
 } */
- 
 .header {
-    position: absolute;
+       position: absolute;
         top: 0;
         padding: 10px 0;
         z-index: 1000;
@@ -17,12 +16,17 @@
         margin: auto;
         transition: 0.5s all ease-in-out;
         box-shadow: none !important;
-        border-bottom: 1px solid #464545;
+        border-bottom: 1px solid #82828240;
     }
+    .category-header {
+        position: relative;
+        background-color:#1e1e1e; /* Red background for Category page */
+        padding: 15px 0;
+      }
     .header.scrolled {
         position: absolute;
             top: 33px;
-            border-radius: 10px 40px 10px 40px;
+            border-radius: 44px;
             padding: 0px 0;
             margin: 30px 20px;
             z-index: 1000;
@@ -39,8 +43,8 @@
     padding: 10px 0;
     transition: 0.5s all ease-in-out;
     animation-name: slideInDown;
-    width: 86%;
-    left: 13px;
+    width: 93%;
+    left: 33px;
 }
 @keyframes slideInDown{
 0% {

@@ -12,9 +12,10 @@ import Contactus from './pages/Contactus';
 import Error from './pages/Error';
 import './styles/main.css';
 import './commonjs/common.js';
-import Footer from './components/Footer';
+import './commonjs/commondata.js';
+// import Footer from './components/Footer';
 import HexBar from './pages/HexBar';
-
+import Category from './pages/Category.jsx';
 function App() {
   return (
     <BrowserRouter>
@@ -30,8 +31,12 @@ function App() {
         <Route path='/contactus' element={<Contactus />} />
         <Route path='/hexbar' element={<HexBar/>}/>
         <Route path='*' element={<Error />} />
+        <Route path='/category' element={<Category/>}/>
       </Routes>
-      <Footer/>
+
+      {/* <AboutSection /> */}
+      {/* <BrightBarssection />  */}
+      {/* <Footer/> */}
     </BrowserRouter>
   );
 }

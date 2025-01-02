@@ -1,16 +1,19 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BiSearch } from "react-icons/bi";
+import { useLocation } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 
 const Header = () => {
+    const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const headerRef = useRef(null); // Create a reference for the header component
+
+    const headerClass = location.pathname === "/category" ? "category-header" : "header";
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
-
+    
     useLayoutEffect(() => {
         const handleScroll = () => {
             if (headerRef.current) {
@@ -33,7 +36,7 @@ const Header = () => {
     return (
         <>
         <div className='container-fluid p-0'>
-        <header ref={headerRef} className="header">
+        <header ref={headerRef} className={`header ${headerClass}`}>
             <div className="header-container">
                 {/* Logo */}
                 <div className="logo">

@@ -8,12 +8,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #400000;
+    background-color:#0f0000;
     z-index: 1;
     opacity: 0.5;
 }
 .hero-section .img-container-box{
-    padding-bottom: 740px;
+    padding-bottom: 800px;
     overflow: hidden;
     position: relative;
     width: 100%;
